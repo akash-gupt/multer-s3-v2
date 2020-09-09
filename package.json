@@ -1,7 +1,7 @@
 {
-  "name": "multer-s3-v2",
-  "version": "2.2.0",
-  "description": "Streaming multer storage engine for AWS S3 with file transform",
+  "name": "multer-s3-v2-multiple-transforms",
+  "version": "3.0.0",
+  "description": "Streaming multer storage engine for AWS S3 with file multiple transforms",
   "main": "index.js",
   "scripts": {
     "test": "standard && mocha test/basic.js"
