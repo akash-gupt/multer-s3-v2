@@ -248,7 +248,7 @@ function S3Storage(opts) {
 }
 
 S3Storage.prototype._handleFile = function (req, file, cb) {
-  collect(this, req, file, function (err, opts) {
+  collect(this, req, file, async function (err, opts) {
     if (err) return cb(err);
 
     if (this.transforms) {
