@@ -267,7 +267,6 @@ S3Storage.prototype._handleFile = function (req, file, cb) {
 			)
 
 			const fileStream = opts.replacementStream || file.stream
-			console.log(file.stream)
 
 			// Transformers pipes for all keys
 			const transformPipes = transformerKeys.reduce(
@@ -363,7 +362,7 @@ S3Storage.prototype._handleFile = function (req, file, cb) {
 
 			// Add contentDisposition
 			if (opts.contentDisposition) {
-				;(params as any).contentDisposition = opts.contentDisposition
+				params.contentDisposition = opts.contentDisposition
 			}
 			const upload = this.s3.upload(params)
 
